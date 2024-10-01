@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        margin: 0;
+      }
+      .rectangle-1 {
+        width: 50vw;
+        height: 50vh;
+        background-color: red;
+        border: 1px solid red;
+        position: absolute;
+        top: 0;
+        left: 0;
+        /* position: relative; */
+      }
+
+      .rectangle-2 {
+        width: 50vw;
+        height: 50vh;
+        background-color: green;
+        border: 1px solid green;
+        position: absolute;
+        top: 0;
+        right: 0;
+      }
+
+      .rectangle-3 {
+        width: 50vw;
+        height: 50vh;
+        background-color: orange;
+        border: 1px solid orange;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+      }
+
+      .rectangle-4 {
+        width: 50vw;
+        height: 50vh;
+        background-color: hotpink;
+        border: 1px solid hotpink;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+      }
+
+      .circle-1 {
+        width: 8vw;
+        height: 8vw;
+        background-color: white;
+        border-bottom-right-radius: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+
+      .circle-2 {
+        width: 8vw;
+        height: 8vw;
+        background-color: white;
+        border-bottom-left-radius: 100%;
+        position: absolute;
+        top: 0;
+        right: 0;
+      }
+
+      .circle-3 {
+        width: 8vw;
+        height: 8vw;
+        background-color: white;
+        border-top-right-radius: 100%;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+      }
+
+      .circle-4 {
+        width: 8vw;
+        height: 8vw;
+        background-color: white;
+        border-top-left-radius: 100%;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+      }
+      .mid-circle {
+        width: 10vw;
+        height: 10vw;
+        background-color: white;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 100%;
+      }
+
+      .square {
+        width: 5vw;
+        height: 5vw;
+        background-color: red;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      .top-half-circle {
+        width: 10vw;
+        height: 10vw;
+        background-color: white;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-bottom-left-radius: 100%;
+        border-bottom-right-radius: 100%;
+      }
+
+      .bottom-half-circle {
+        width: 10vw;
+        height: 10vw;
+        background-color: white;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%, 50%);
+        border-top-left-radius: 10vw;
+        border-top-right-radius: 10vw;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        overflow: hidden;
+      }
+      .middle-square {
+        width: 10vw;
+        height: 10vw;
+        background-color: white;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      .middle-circle {
+        width: 5vw;
+        height: 5vw;
+        background-color: red;
+        border-radius: 100%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="rectangle-1">
+      <div class="mid-circle">
+        <div class="square"></div>
+      </div>
+    </div>
+    <div class="rectangle-2">
+      <div class="mid-circle">
+        <div class="square"></div>
+      </div>
+    </div>
+    <div class="rectangle-3">
+      <div class="mid-circle">
+        <div class="square"></div>
+      </div>
+    </div>
+    <div class="rectangle-4">
+      <div class="mid-circle">
+        <div class="square"></div>
+      </div>
+    </div>
+    <div class="circle-1"></div>
+    <div class="circle-2"></div>
+    <div class="circle-3"></div>
+    <div class="circle-4"></div>
+    <div class="top-half-circle"></div>
+    <div class="bottom-half-circle"></div>
+    <div class="middle-square">
+      <div class="middle-circle"></div>
+    </div>
+  </body>
+</html>
